@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>record player</title>
+    <link rel="stylesheet" href="music.css">
+</head>
+<body>
+    <!-- <div class="colour">
+        <button class="color" oneclick = "changeColor()">switch</button>
+        <H2 class="center" id = "hex">#</H2>
+    </div> -->
+        <div class="player">
+            <div class="record ">
+                <div class="label"> </div>
+            </div>
+            <div class="tone-arm">
+                <div class="control"></div>
+            </div>
+            <button class="btn">
+
+            </button>
+            <div class="slider-container">
+                <input type="range" class="slider" min="0" max="2"
+                step="0.01" value="1"/>
+            </div>
+        </div>
+        
+        <audio loop class="my-song" src="kaguya.mp3"
+        preload="auto"></audio>
+
+
+    <script src="music.js"></script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    height: 20px;
+    /* background-color: red; For browsers that do not support gradients */
+    background-image: linear-gradient(to right, purple , cyan);
+}
+/* .center{
+    padding-top: 50px;
+    margin: 40px;
+    text-align: center;
+
+}
+.color{
+    margin: auto;
+    text-align: center;
+    top: 640px;
+    left: 430px;
+    position: absolute;
+    background-color: red;
+    border-radius:5px;
+    box-shadow: 2.5px 2.5px 2.5px ;
+    cursor: pointer;
+} */
+
+
+.player{
+    background-color: red;
+    height: 190px;
+    width:330px;
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    border-radius: 15px;
+    border-color: aqua;
+    box-shadow: 5px 5px 7px black;
+    
+
+}
+.record{
+    height: 175px;
+    width: 175px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 7px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* box-shadow: 2.5px 2.5px 2.5px ; */
+
+}
+.record:before,
+.record:after{
+    position:absolute;
+    content: "";
+    border: 5px solid transparent;
+    border-top-color: cyan;
+    border-bottom-color: cyan;
+    border-radius: 50%;
+    /* animation: spin 50s; */
+}
+.record:before{
+    height:135px;
+    width: 135px;
+
+}
+.record:after{
+    height: 95px;
+    width: 95px;
+}
+.label{
+    background-color: black;
+    height: 15px;
+    width: 15px;
+    border: 20px solid orange;
+    border-radius: 50%;
+}
+.tone-arm{
+    height: 90px;
+    width: 6px;
+    background-color: white;
+    position: absolute;
+    top: 25px;
+    right: 95px;
+    transition: 1.5s;
+    transform-origin: top;
+}
+.tone-arm:before{
+    content: "";
+    height: 40px;
+    width: 6px;
+    background-color: white;
+    position: absolute;
+    transform: rotate(30deg);
+    bottom: -36px;
+    right: 10px;
+    transition: 1.5s;
+}
+.tone-arm:after{
+    content: "";
+    height: 0px;
+    width: 10px;
+    /* background-color: white; */
+    position: absolute;
+    border-top: 18px solid grey;
+    border-left: 2px solid transparent; 
+    border-right: 2px solid transparent;
+    top: 108px;
+    right: 13px; 
+    transition: 1.5s;
+    transform: rotate(30deg);
+
+}
+.btn{
+    height: 28px;
+    width: 28px;
+    background-color: crimson;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    border: none;
+    border: 2px solid pink;
+    outline: none;
+    box-shadow: 2.5px 2.5px 3px rgba(0, 0, 0);
+    cursor: pointer;
+}
+
+.control{
+    background-color:yellow ;
+    height: 17px;
+    width: 17px;
+    border: 10px solid orange;
+    border-radius: 50%;
+    position: absolute;
+    top: -16px;
+    left: -16px;
+    box-shadow: 1.5px 1.5px 5px ;
+}
+.slider{
+    -webkit-appearance: none;
+    appearance: none;
+    transform: rotate(-90deg);
+    width: 90px;
+    height: 7px;
+    position: absolute;
+    left: 238px;
+    top: 70px;
+    background-color: crimson;
+    outline: none;
+    border-radius: 8px;
+    border: 3px solid pink ;
+    box-shadow: -2.5px 2.5px 5px;
+}
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: wheat;
+    cursor: pointer;
+
+}
+.play{
+    transform: rotate(30deg);
+    transform-origin: top;
+    transition: 1s;
+
+}
+.on{
+    animation: spin 1111s 1s linear;
+   
+}
+
+@keyframes spin{
+    100%{
+        transform: rotate(114500deg);
+    }
+}
